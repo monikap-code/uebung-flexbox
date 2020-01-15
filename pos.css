@@ -30,7 +30,10 @@ section {
 	min-width: 10px;
 	padding: 1rem 0;
 	min-height: 300px;
-	display: block;
+	display: flex; /* Display Flex bringt die divs nebeneinander */ 
+	justify-content: space-between; /* Regelt den Platz auf der x-Achse*/
+	align-items: stretch; /* Align-items regelt de Platz auf der y-Achse*/
+	background-color: #DE8F6E;
 }
 
 
@@ -38,14 +41,17 @@ section {
 	min-width: 20px;
 	min-height: 70px;
 	margin: 10px;
+	float: left;
 }
 
 .trolley-grey {
 	background: #7D7C84;
+	flex-grow: 1;
 }
 
 .sea-green {
 	background: #2D93AD;
+	flex-grow: 1;
 }
 
 .middle-red {
@@ -55,10 +61,12 @@ section {
 
 .black {
 	background: #000;
+	flex-grow: 1;
 }
 
 .orange {
 	background: orange;
+	flex-grow: 1;
 
 }
 
